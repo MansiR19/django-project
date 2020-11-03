@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'basic_app/base.html'%}
+
+{%block body_block%}
+    <h1>WELCOME TO RELATIVE URL TEMPLATE</h1>
+    <a href="{% url 'basic_app:other'%}">LINK FOR THE OTHER PAGE USING RELATIVE URL</a>
+    <br><br><br>
+    <a href="{% url 'admin:index'%}">LINK FOR THE ADMIN PAGE</a><br><br><br>
+    <a href="{%url 'index'%}">LINK FOR THE INDEX PAGE</a><br><br>
+{%endblock%}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{%extends 'basic_app/base.html'%}
+{% load myextras %}
+{% block body_block%}
+<H1>WELCOME TO INDEX PAGE!</H1>
+<h2>Go to the /basic_app/relative to see the other page</h2>
+<h1>{{text|cut:'hello'}}</h1>
+<h1>{{Number|add:'99'}}</h1>
+{% endblock %}
+
